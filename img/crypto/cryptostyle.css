@@ -1,0 +1,24 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CSS varibles */
+
+:root{
+    --navbar-height:59px;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+#logo img{
+    margin: -5px 1px;
+    padding: 10px 0px;
+    height: 133px;
+}

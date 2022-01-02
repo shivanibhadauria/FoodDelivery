@@ -1,0 +1,182 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-heigh: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* Navigation Bar : logo and image */
+#logo{
+    margin: 34px 45px;
+
+
+}
+
+#logo img{
+    margin: 6px 6px;
+    height: 85px;
+    
+    
+
+
+}
+
+/* Navigation Bar : list styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+  
+    content: "";
+    background-color: black;
+   
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+
+   
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: blanchedalmond;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+ } 
+
+ #navbar ul li a:hover{
+     color: black;
+     background-color: blanchedalmond;
+  
+ } 
+
+ /* Home section */
+
+ #home{
+     display: flex;
+     flex-direction: column;
+     height: 900px;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ #home::before{
+     
+    content: "";
+    background:url('background.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89; 
+    top: 0px;
+    left: 0px;  
+}
+
+#home h1{
+    color: rgb(11, 12, 12);
+    text-align: center;
+}
+
+#home p{
+    color: rgb(10, 12, 12);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* services section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(12, 86, 109);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(196, 180, 211);
+    
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+
+}
+
+/* Client section */
+
+#client-section{
+    height: 344px;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img{
+    height: 150px;
+}
+
+#contact{
+
+}
+
+
+/* utility classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(52, 140, 175);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.center{
+    text-align: center;
+}
